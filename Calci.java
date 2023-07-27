@@ -1,6 +1,6 @@
 import java.util.Scanner;
-class interface Calci{
-public int getSum(int n1,int n2);
+interface Calci{
+int getSum(int n1,int n2);
 } 
 
 class CalciImp implements Calci
@@ -18,8 +18,8 @@ System.out.println("Enter 2 num to find sum");
 int n1=s.nextInt();
 int n2=s.nextInt();
 CalciImp c=new CalciImp();
-int sum=s.getSum(n1,n2);
-System.out.println(n1+"+"+n2+"="+sum);
+int sum=c.getSum(n1,n2);
+System.out.println(n1+ "+" +n2+ "=" +sum);
 }
 }
 
